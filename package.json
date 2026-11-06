@@ -1,0 +1,14 @@
+{
+  "name": "excuses-generator-javascript",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Console excuse generator for the 4Geeks Academy JavaScript exercise.",
+  "main": "excuse-generator.js",
+  "scripts": {
+    "start": "node excuse-generator.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

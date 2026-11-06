@@ -1,0 +1,21 @@
+{
+  "upstream": "4GeeksAcademy/excuses-generator-with-prompts",
+  "url": "https://github.com/4GeeksAcademy/excuses-generator-with-prompts",
+  "commit": "d55b7cca8b1ca8c6d05eb6274ece0db27f2d6b0f",
+  "license": null,
+  "license_note": "The upstream commit has no LICENSE file. The GitHub repository license field is null. This repository does not add a license.",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "b9c39ffd2fa2304eb762943c0bdfe122224e28c4481933c9625894b69c9a01f2"
+    },
+    {
+      "path": "README.es.md",
+      "sha256": "b9ad9cf78f76d341e15417dd8be977143ef178f9d6db9b52875d91bf8996b500"
+    },
+    {
+      "path": "learn.json",
+      "sha256": "4d5ecd5328a4e271d3ad02d6e32d477631224003a8796ab8a4d87727e90e444f"
+    }
+  ]
+}
