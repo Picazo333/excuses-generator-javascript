@@ -87,14 +87,14 @@ node --check excuse-generator.js
 | --- | --- |
 | `excuse-generator.js` | Programa. Se ejecuta con Node.js. |
 | `test/excuse.test.js` | Lógica, bordes y aleatoriedad con semilla. |
-| `PROMPTS.md` | Los ocho prompts usados, en orden. |
+| `PROMPTS.md` | Ocho prompts para GitHub Copilot. No se ejecutaron allí. Copilot no generó el script. |
 | `PROVENANCE.json` | Commit upstream y hashes. |
 | `package.json` | `npm start` y `npm test`. Sin dependencias. |
 | `.github/workflows/test.yml` | Ejecuta la comprobación, los tests y el programa en Node.js 22. |
 
 ## Prompts
 
-El ejercicio se construye en ocho pasos y pide no solicitar el archivo entero en un solo prompt. Los prompts seguidos en esta implementación están en [PROMPTS.md](PROMPTS.md).
+El ejercicio pide ocho prompts separados para GitHub Copilot. La lista está en [PROMPTS.md](PROMPTS.md). Esos prompts no se ejecutaron en Copilot. Copilot no generó `excuse-generator.js`. El paso pendiente es ejecutarlos en Copilot y pegar cada respuesta o captura en ese archivo.
 
 ## Procedencia
 

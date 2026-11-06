@@ -1,0 +1,78 @@
+status: APROBADO_ORQUESTADOR_BLOCKED_HITL
+program_commit: 1af02a76df0d7640954d3e84dfd521d9c53528b0
+score: {pass: 38, fail: 0, hitl_miguel: [R03, R04, R26], hitl_envio_miguel: [H01]}
+copilot_generated_the_script: false
+branch: cursor/excuses-generator-javascript-9b88
+repo: https://github.com/Picazo333/excuses-generator-javascript
+upstream: 4GeeksAcademy/excuses-generator-with-prompts@d55b7cca8b1ca8c6d05eb6274ece0db27f2d6b0f
+node_local: v22.23.4
+tests_local: {pass: 22, fail: 0, command: "node --test"}
+actions_run: https://github.com/Picazo333/excuses-generator-javascript/actions/runs/42220840238
+actions_conclusion: success
+anti_ia_scan: LIMPIO
+artifacts:
+  - id: console-log
+    path: /opt/cursor/artifacts/logs/console.log
+    captured_at: "2026-11-06T12:49:49+00:00"
+    rubric: [R01, R02, R05, R07, R24, R25, R33, S01, E01]
+    note: "Salida real de node --check, dos ejecuciones de node excuse-generator.js, el layout determinista, la semilla 42, npm test (22 pass) y npm start."
+  - id: node-test-spec
+    path: /opt/cursor/artifacts/logs/node-test-spec.txt
+    rubric: [R32, E02]
+    note: "Reporter spec de node --test sobre el árbol commiteado. 22 pass, 0 fail."
+  - id: github-actions
+    path: /opt/cursor/artifacts/logs/github-actions.json
+    rubric: [R05, E03]
+    note: "Run 42220840238, conclusion success, headSha 1af02a76df0d7640954d3e84dfd521d9c53528b0."
+  - id: console-png
+    path: /opt/cursor/artifacts/console-excuse.png
+    rubric: [R33, E01, S01]
+    note: "PNG de la transcripción del primer node excuse-generator.js del log. No es una captura de navegador: no hay UI. El texto coincide con esa ejecución."
+  - id: source
+    path: excuse-generator.js
+    commit: 1af02a76df0d7640954d3e84dfd521d9c53528b0
+    lines:
+      who: 3
+      action: 4
+      what: 5
+      when: 6
+      draw_unit: "8-23"
+      require_phrases: "25-36"
+      build_excuse: "38-59"
+      selection: "44-47"
+      excuse: "49-50"
+      possibility_line: "61-75"
+      failure_line: "77-80"
+      console_log_excuse: 87
+      main_exit: "101-106"
+    rubric: [R01, R02, R06, R07, R08, R09, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23, R24, R27, S01, S02, S05, E01]
+    note: "El orden del archivo no acredita R03. R03 exige la sesión de Copilot."
+  - id: tests
+    path: test/excuse.test.js
+    commit: 1af02a76df0d7640954d3e84dfd521d9c53528b0
+    rubric: [R09, R11, R13, R15, R20, R21, R22, R32, S02, S03, S05, E02]
+  - id: prompts
+    path: PROMPTS.md
+    rubric: [R30]
+    hitl_miguel: [R03, R04, R26]
+    note: "Lista los ocho prompts y deja cada salida en pending. Declara que Copilot no generó excuse-generator.js. No es evidencia de una sesión de Copilot."
+  - id: readme
+    path: README.md
+    commit: 1af02a76df0d7640954d3e84dfd521d9c53528b0
+    rubric: [R25, R28, R29, R31, S01]
+  - id: readme_es
+    path: README.es.md
+    commit: 1af02a76df0d7640954d3e84dfd521d9c53528b0
+    rubric: [R25, R28, R31, S01]
+  - id: provenance
+    path: PROVENANCE.json
+    commit: 1af02a76df0d7640954d3e84dfd521d9c53528b0
+    rubric: [R28, R29]
+  - id: workflow
+    path: .github/workflows/test.yml
+    commit: 1af02a76df0d7640954d3e84dfd521d9c53528b0
+    rubric: [E03]
+  - id: rubric
+    path: /opt/cursor/artifacts/RUBRIC.md
+    rubric: []
+    note: "Escaneo anti-IA LIMPIO. R03, R04 y R26 figuran como HITL_MIGUEL."
